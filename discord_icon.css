@@ -1,0 +1,101 @@
+[class*="Voice_voiceStates__"] {
+  display: flex; 
+  flex-direction: column;
+} 
+[class*="Voice_voiceState__"] {
+  display: flex; 
+  height: initial; 
+  margin-bottom: 0;
+} 
+[class*="Voice_avatar__"] {
+  border-radius: 8px; 
+  filter: brightness(70%);
+} 
+[class*="Voice_avatarSpeaking__"] {
+  position: relative; 
+  filter: brightness(100%); 
+  border-color: #FFFFFF; 
+  animation: 750ms infinite alternate ease-in-out speak-jump; 
+  animation-duration: 750ms;
+}
+@keyframes speak-jump {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes speak-border {
+  0% {
+    filter: drop-shadow(2px 2px 0px #FFFFFF) drop-shadow(-2px -2px 0px #FFFFFF) drop-shadow(-2px 2px 0px #FFFFFF) drop-shadow(2px -2px 0px #FFFFFF);
+  }
+  50% {
+    filter: drop-shadow(2px 2px 0px #FFFFFF) drop-shadow(-2px -2px 0px #FFFFFF) drop-shadow(-2px 2px 0px #FFFFFF) drop-shadow(2px -2px 0px #FFFFFF);
+  }
+  100% {
+    filter: drop-shadow(2px 2px 0px #FFFFFF) drop-shadow(-2px -2px 0px #FFFFFF) drop-shadow(-2px 2px 0px #FFFFFF) drop-shadow(2px -2px 0px #FFFFFF);
+  }
+}
+
+[class*="Voice_name__"] {
+  left: 0px;
+  position: relative;
+  visibility: hidden;
+}
+
+[class*="Voice_voiceStates__"] {
+  display: flex; 
+  flex-direction: column;
+} 
+[class*="Voice_voiceState__"] {
+  display: flex; 
+  height: initial; 
+  margin-bottom: 0;
+} 
+[class*="Voice_avatar__"] {
+  border-radius: 8px; 
+  filter: brightness(70%);
+} 
+[class*="Voice_avatarSpeaking__"] {
+  position: relative; 
+  filter: brightness(100%); 
+  border-color: #FFFFFF; 
+  animation: 750ms infinite alternate ease-in-out speak-jump; 
+  animation-duration: 750ms;
+}
+@keyframes speak-jump {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes speak-border {
+  0% {
+    filter: drop-shadow(2px 2px 0px #FFFFFF) drop-shadow(-2px -2px 0px #FFFFFF) drop-shadow(-2px 2px 0px #FFFFFF) drop-shadow(2px -2px 0px #FFFFFF);
+  }
+  50% {
+    filter: drop-shadow(2px 2px 0px #FFFFFF) drop-shadow(-2px -2px 0px #FFFFFF) drop-shadow(-2px 2px 0px #FFFFFF) drop-shadow(2px -2px 0px #FFFFFF);
+  }
+  100% {
+    filter: drop-shadow(2px 2px 0px #FFFFFF) drop-shadow(-2px -2px 0px #FFFFFF) drop-shadow(-2px 2px 0px #FFFFFF) drop-shadow(2px -2px 0px #FFFFFF);
+  }
+}
+
+[class*="Voice_name__"] {
+  left: 0;
+  position: relative;
+  visibility: hidden;
+}
+
+[src*="avatars/"],[src*="avatars/"] + [class*="Voice_user_"]  {
+  display: none;
+}
